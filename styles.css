@@ -1,0 +1,499 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Icons */
+.list-icon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* .list-icon i{
+    position: fixed;
+}
+
+.list-icon i{
+    
+} */
+
+/* Navigation Menu */
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1e1e1e;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Close Icon */
+#menu-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu Links */
+nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+nav a:hover {
+    background-color: #ff5733;
+}
+
+
+header {
+    padding: 40px;
+    background: #1e1e1e;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+header i {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    background-color: #ff5733;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+header i:hover {
+    background-color: #ef7053;
+}
+
+.image-text-container {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.header img {
+    width: 180px;
+    height: auto;
+}
+
+.image-text-container h3 {
+    /* margin-: 0; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ------Home Page------- */
+.color-7vftc1 {
+    color: #ff5733;
+}
+
+.information {
+    padding: 30px;
+}
+
+.information-detailed {
+    width: 50%;
+    margin: 0 auto;
+    color: #adadad;
+    text-align: center;
+    color: #b3786b;
+    font-size: 1.2rem;
+
+}
+
+.btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f87557;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #222;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    color: #fff;
+    list-style: none;
+}
+
+.items a {
+    padding: 10px;
+    color: #bababa;
+    text-decoration: none;
+}
+
+.items a:hover {
+    color: aliceblue;
+}
+
+.auth-buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login-btn,
+.register-btn {
+    display: inline;
+    padding: 10px;
+    width: 30%;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #ff5733;
+    color: white;
+}
+
+.register-btn {
+    background-color: #444;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #ff2e00;
+}
+
+.register-btn:hover {
+    background-color: #666;
+}
+
+
+
+/*----- Contact ------ */
+.contact-sec {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.heading {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgb(245, 245, 245);
+}
+
+.contact-information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-information form {
+    width: 50vw;
+    padding: 5px;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 12px;
+
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn.btn2 {
+    width: 80%;
+    padding: 10px;
+    border-radius: 12px;
+    display: inline-block;
+    color: white;
+    background: #ff431b;
+    ;
+    margin-bottom: 10px;
+}
+
+/* ---------- About Us --------- */
+.about-profile {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.about-profile img {
+    border: 1px rgb(0, 0, 0) solid;
+    box-shadow: rgba(232, 240, 255, 0.15) 0px 4px 24px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-information {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.detailed {
+    width: 80%;
+    margin: 0 auto;
+    color: #adadad;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    /* font-size: 1.5rem; */
+}
+
+/* ---------- Courses --------- */
+.course-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    margin-right: 10%;
+}
+
+.image-container img {
+    border: 1px rgb(0, 0, 0) solid;
+    box-shadow: rgba(232, 240, 255, 0.15) 0px 4px 24px;
+}
+
+.course-detailed {
+    width: 80%;
+    margin: 0 auto;
+    color: #adadad;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.course-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.enroll-btn, .watch-btn, .complete-btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.progress-text {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+}
+
+.enrolled {
+    border: 2px solid #ff5733;
+}
+
+/* Modal for Video */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+ }
+
+.course-card h2 {
+    color: #ff5733;
+}
+
+/* Login Page Styling */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.login-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5733;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin: 35px 0 0px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    width: 45vw;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #262626;
+    color: white;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 15px;
+    color: #d3d3d3;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.new-user {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.new-user a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+.new-user a:hover {
+    text-decoration: underline;
+}
+
+
+/* -----Make Responsive----- */
+@media screen and (max-width: 768px) {
+    .information-detailed {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+
+    .image-container img{
+        width: 130%;
+    }
+
+    .course-detailed {
+        font-size: 1.2rem;
+    }
+
+    .list-icon {
+        font-size: 20px;
+        width: 35px;
+        padding: 8px;
+    }
+
+}

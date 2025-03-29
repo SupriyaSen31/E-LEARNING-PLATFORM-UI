@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses |EduThrive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <div class="list-icon">
+            <i class="fa-solid fa-bars" id="menu-open" onclick="openMenu()" style="color: #36383a;"></i>
+            <nav id="menu">
+                <i class="fa-solid fa-xmark" id="menu-close" onclick="closeMenu()" style="color: #36383a;"></i>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn login-btn">Login</a>
+                    <span class="or-text">OR</span>
+                    <a href="register.html" class="btn register-btn">Register</a>
+                </div>
+            </nav>
+        </div>
+
+        <section class="course-profile">
+            <div class="image-text-container">
+                <div class="image-container">
+                    <img src="assets/profile1.jpg" alt="EduThrive Logo" style="width: 100%; height: auto;">
+                    <p>Founder</p>
+                </div>
+                <div class="text-container">
+                    <h3>Hey! I'M</h3>
+                    <h3 class="color-7vftc1">Supriya Sen </h3>
+                    <p class="course-detailed">"I am a dedicated Frontend Developer with expertise in HTML, CSS, JavaScript, and React, committed to creating intuitive and visually appealing web experiences. My passion lies in building scalable, responsive, and user-friendly applications that enhance user engagement. With a keen eye for design and functionality, I ensure seamless integration of aesthetics and performance. Beyond coding, I find inspiration in dancing, which fuels my creativity and problem-solving skills, allowing me to approach development with a fresh perspective."</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Course Enrollmen -->
+    <section class="courses">
+        <h1>Available Courses</h1>
+        <div class="course-container">
+            <div class="course-card" id="course-1">
+                <h2>Web Development</h2>
+                <p>Learn HTML, CSS, and JavaScript</p>
+                <button class="enroll-btn" onclick="enrollCourse(1)">Enroll Now</button>
+                <button class="watch-btn" onclick="watchVideo('https://www.youtube.com/embed/HcOc7P5BMi4?si=QvjzipQmutVxeRy8')">HTML Video</button>
+                <button class="watch-btn" onclick="watchVideo('https://www.youtube.com/embed/ESnrn1kAD4E?si=P5Skt_MDjlgbbjv2')">CSS Video</button>
+                <button class="watch-btn" onclick="watchVideo('https://www.youtube.com/embed/VlPiVmYuoqw?si=ecTtF1emWr3fMTzn')">JAVASCRIPT Video</button>
+                <p class="progress-text">Progress: <span id="progress-1">0</span>%</p>
+                <progress id="progress-bar-1" value="0" max="100"></progress>
+                <button class="complete-btn" onclick="completeLesson(1)">Complete Lecture</button>
+            </div>
+            <div class="course-card" id="course-2">
+                <h2>React.js Mastery</h2>
+                <p>>Master React and state management</p>
+                <button class="enroll-btn" onclick="enrollCourse(2)">Enroll Now</button>
+                <button class="watch-btn" onclick="watchVideo('https://www.youtube.com/embed/videoseries?si=V-GICg14qZq_n2MP&amp;list=PLo3mSKlNO9eJn6o0p294yhRco9l9goq9v')">Watch Video</button>
+                <p class="progress-text">Progress: <span id="progress-2">0</span>%</p>
+                <progress id="progress-bar-2" value="0" max="100"></progress>
+                <button class="complete-btn" onclick="completeLesson(2)">Complete Lecture</button>
+            </div>
+            <div class="course-card" id="course-3">
+                <h2>UI/UX Design</h2>
+                <p>Learn to create user-friendly interfaces and enhance user experience</p>
+                <button class="enroll-btn">Enroll Now</button>
+                <button class="watch-btn" onclick="watchVideo('https://www.youtube.com/embed/videoseries?si=-_tfG6xLEjpYFeD9&amp;list=PLdvOfoe7PXT0ouChAnR1nHlT8BJIo5hP_')">Watch Video</button>
+                <p class="progress-text">Progress: <span id="progress-3">0</span>%</p>
+                <progress id="progress-bar-3" value="0" max="100"></progress>
+                <button class="complete-btn" onclick="completeLesson(3)">Complete Lecture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Modals for Video Learning  -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <iframe id="video-frame" width="560" height="315" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer with Quick Links & Social Media -->
+    <footer class="Contact">
+        <div class="quick-link">
+            <h3><u>Quick Links</u></h3>
+            <ul class="items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-me">
+            <h3><u>You can contact me...</u></h3>
+            <ul class="items">
+                <li><a href="https://www.linkedin.com/in/supriya-sen-79078b284/"><i class="fa-brands fa-linkedin"></i>
+                        Linkedin</a></li>
+                <li><a href="https://github.com/SupriyaSen31"><i class="fa-brands fa-github"></i> Github</a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://x.com/sensupriya31"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    <p class="copyright">&copy; 2025 E-Learning Platform. All rights reserved.</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
