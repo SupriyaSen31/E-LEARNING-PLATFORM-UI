@@ -23,3 +23,4 @@ The course section is one of the most critical parts of EduThrive. The courses a
 
 *OUTPUT
 
+![Image](https://github.com/user-attachments/assets/1aabeb35-658d-4675-9eb0-299e8685bfc6)
